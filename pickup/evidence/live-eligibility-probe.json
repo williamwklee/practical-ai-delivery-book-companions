@@ -1,0 +1,77 @@
+{
+  "live_jira_read": true,
+  "source": "getJiraIssue DEV-80 via existing ChatGPT connector",
+  "snapshot": {
+    "key": "DEV-80",
+    "type": "Task",
+    "status": "Work Approved",
+    "owner": null,
+    "definition_sha256": "8c7f2c9f4b8795444f05184c9a1aeda1e044af01fb140c837651f7813a46e5a3",
+    "read_at": 1790612926.605373,
+    "blockers": [
+      {
+        "key": "DEV-79",
+        "status": "In Progress"
+      }
+    ]
+  },
+  "outcome": {
+    "claim": null,
+    "reason": "nothing_eligible",
+    "details": {
+      "DEV-80": "unfinished_or_unknown_dependency"
+    }
+  },
+  "claim_count": 0,
+  "writes_to_jira": 0,
+  "new_AI_processes": 0,
+  "owner_field_limit": "No live ownership assertion needed: native unfinished prerequisite rejects before ownership or claim.",
+  "queue": {
+    "policy": {
+      "publisher": "ChatGPT",
+      "max_scans": 1,
+      "max_claims": 1,
+      "max_concurrent": 1,
+      "deadline": 1790613225.427934,
+      "lease_seconds": 120.0,
+      "freshness": 30.0,
+      "last_time": 1790612926.607483,
+      "stopped": "read-only eligibility probe complete; no claim made"
+    },
+    "scans": [
+      {
+        "id": "c27a5fd98007237332076e9d4f36c4f6",
+        "reserved": 1790612925.432362,
+        "expires": 1790612955.432362,
+        "state": "used",
+        "reason": null
+      }
+    ],
+    "claims": [],
+    "publications": [],
+    "events": [
+      {
+        "n": 1,
+        "at": 1790612925.432362,
+        "action": "scan_reserved",
+        "unit": null,
+        "details": "{\"scan\": \"c27a5fd98007237332076e9d4f36c4f6\"}"
+      },
+      {
+        "n": 2,
+        "at": 1790612926.606633,
+        "action": "nothing_eligible",
+        "unit": null,
+        "details": "{\"reasons\": {\"DEV-80\": \"unfinished_or_unknown_dependency\"}, \"scan\": \"c27a5fd98007237332076e9d4f36c4f6\"}"
+      },
+      {
+        "n": 3,
+        "at": 1790612926.607483,
+        "action": "stopped",
+        "unit": null,
+        "details": "{\"reason\": \"read-only eligibility probe complete; no claim made\"}"
+      }
+    ],
+    "human_acceptance": "not granted by this controller"
+  }
+}

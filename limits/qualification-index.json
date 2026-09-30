@@ -1,0 +1,99 @@
+{
+  "groups": [
+    {
+      "group": "product_warning",
+      "file": "product_warning/evidence.json",
+      "sha256": "fd989d971e7e08d187fd7821858cfd0d443c9f5819d3c4367e7720c24ca8f17e"
+    },
+    {
+      "group": "observed_usage",
+      "file": "observed_usage/evidence.json",
+      "sha256": "eb8a9456a8aac19142563be9202c3679c85c36d193ea0b96fcc77a6d425ab6e1"
+    },
+    {
+      "group": "limit",
+      "file": "limit/evidence.json",
+      "sha256": "8ca3d4939e09585b7ac5dae5a7aa54a9869e9c04a6ad639dd02e29e7125507e9"
+    },
+    {
+      "group": "no_progress",
+      "file": "no_progress/evidence.json",
+      "sha256": "235faada42673b35f58a9e8af32e1a1c9cab761a36d5a254c6cc01996ff8c0f9"
+    },
+    {
+      "group": "transient",
+      "file": "transient/evidence.json",
+      "sha256": "f235bb9d3559bfb4ed862ab2890cb54cbcf144ed212e726f8cedad89713a7ec4"
+    },
+    {
+      "group": "missing_evidence",
+      "file": "missing_evidence/evidence.json",
+      "sha256": "f9ef439ab61993676853477f761a5a6825d49deef584a202246a55397938da5b"
+    },
+    {
+      "group": "out_of_authority",
+      "file": "out_of_authority/evidence.json",
+      "sha256": "3248d939c2d2e35192a3a4a724b78f9732e794061bfecba494e0f7f62fdb5788"
+    },
+    {
+      "group": "manual",
+      "file": "manual/evidence.json",
+      "sha256": "8d5d14d9e4348843e9bca4f18e3e57def5aa66eb26a965226fc2c62b45928003"
+    }
+  ],
+  "count": 8,
+  "actual_fixture_subprocesses": 1,
+  "new_AI_processes": 0,
+  "real_quota_exhausted": false,
+  "real_service_writes": 0,
+  "physical_evidence": "physical-adapter/evidence.json",
+  "authority_records": "fictional test inputs, not William decisions",
+  "public_files": [
+    {
+      "path": "evidence/limit.json",
+      "bytes": 13852,
+      "sha256": "d303cbe311a184ea0907dfbd3d44d5ac8fec401e08056a3217fbb338b8827290"
+    },
+    {
+      "path": "evidence/manual.json",
+      "bytes": 9794,
+      "sha256": "44b26dc6bea9a8259822e980f9512cafbdd3439aaed7b03a0712bc1c84b37c2e"
+    },
+    {
+      "path": "evidence/missing_evidence.json",
+      "bytes": 11753,
+      "sha256": "45caa5c6d4dc0471b132fb9f1c09f936e5c8bf4dd8ed62cf17a27ab1893b2ca5"
+    },
+    {
+      "path": "evidence/no_progress.json",
+      "bytes": 14947,
+      "sha256": "559b28cdfab9d422b3e77b5b711ee795449c836718a16596b9cb231c209f5f9f"
+    },
+    {
+      "path": "evidence/observed_usage.json",
+      "bytes": 13879,
+      "sha256": "b4c1237a802fee9dbb01bc8b0c575fda06eb6ef47191563c6deac190516a8730"
+    },
+    {
+      "path": "evidence/out_of_authority.json",
+      "bytes": 9826,
+      "sha256": "850906786b1019d9cf43dc11c997f85ae296b3c9b2a33538cfb4e718f781f360"
+    },
+    {
+      "path": "evidence/physical-adapter.json",
+      "bytes": 9450,
+      "sha256": "2f11ef3a4a81ea21cedf84ba8f265270b761b7345ebf56ee7cda244eb7509f81"
+    },
+    {
+      "path": "evidence/product_warning.json",
+      "bytes": 12051,
+      "sha256": "a4df6a96efadf81491b90f87617c935b78ccdd16024374a225249cd8ceb5bc46"
+    },
+    {
+      "path": "evidence/transient.json",
+      "bytes": 12786,
+      "sha256": "358b031d4014fbcd0ce94a0224ee3f95340d1fab94463ed4a9754bc3890927de"
+    }
+  ],
+  "public_form": "Complete final events, stops, attempts and cumulative state; earlier snapshots contain scopes and attempt/stop IDs without duplicating the same event history. In public group files final_state is the original final_stopped snapshot."
+}

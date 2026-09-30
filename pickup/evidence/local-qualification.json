@@ -1,0 +1,146 @@
+{
+  "scope": "local deterministic process contention and filesystem publication, not live Jira claim or end-to-end connector integration",
+  "actual_competing_processes": 2,
+  "process_exit_codes": [
+    0,
+    0
+  ],
+  "winning_owners": 1,
+  "exact_result_file_sha256": "c14142a75845375970550dbace753fdb20a396c1a31324c2eac067dc5f4a4ab2",
+  "rejected_repeat_or_wrong_owner": [
+    "stale_or_wrong_owner",
+    "stale_or_wrong_owner"
+  ],
+  "runner_proof": {
+    "result_sha256": "c14142a75845375970550dbace753fdb20a396c1a31324c2eac067dc5f4a4ab2",
+    "request_sha256": "4512258e70c1aadda67776fa17bdd42e9e50e5690d8ce9060f64f6f6d811612f",
+    "review_sha256": "40c7f569832eda71d1a5313cd7862c6541c198a84a44f9d41438e8064bd2722f",
+    "disposition": "READY_FOR_PUBLICATION",
+    "deterministic_checks_pass": true
+  },
+  "source_evidence": "DEV-78 qualified live-pass, reused; no fresh AI generation or new review claimed",
+  "new_AI_processes": 0,
+  "source_files": {
+    "candidate-0.json": "fe38ab5502fb3aec438fb55ff3d4bc6abc67d5b94a3d5a5b24148f56592627f6",
+    "context.json": "f8026bf56c35f874c3619d2fc82788ec900a6f5532a9d224f0b755d1eb54807e",
+    "events.json": "dc714488e04362e7a3f1713818d528fbc87ad6a9d0051733b7c442d7516a6552",
+    "state.json": "4fe8abb889f685a3548e8011c536ce75bf6bfa33e61f0e96df47026c4448eb16"
+  },
+  "state": {
+    "policy": {
+      "publisher": "publisher",
+      "max_scans": 12,
+      "max_claims": 2,
+      "max_concurrent": 2,
+      "deadline": 1790613584.3510542,
+      "lease_seconds": 500.0,
+      "freshness": 15.0,
+      "last_time": 1790612984.432437,
+      "stopped": "local qualification complete; no further scan or work admitted"
+    },
+    "scans": [
+      {
+        "id": "12defd0745ab82ecf0177378381d72a4",
+        "reserved": 1790612984.413258,
+        "expires": 1790612999.413258,
+        "state": "used",
+        "reason": null
+      },
+      {
+        "id": "0bde17ef735b4a58d1d3e729c3756481",
+        "reserved": 1790612984.422364,
+        "expires": 1790612999.422364,
+        "state": "used",
+        "reason": null
+      }
+    ],
+    "claims": [
+      {
+        "id": "4a275fface1183aca31045fefb890ca6",
+        "unit": "BOOK-DEMO-1",
+        "owner": "worker-0",
+        "expires": 1790613484.414283,
+        "state": "delivered",
+        "board_receipt": "LOCAL FIXTURE: simulated board transition, not a Jira write",
+        "created": 1790612984.414283,
+        "board_confirmed": 1790612984.428213
+      }
+    ],
+    "publications": [
+      {
+        "unit": "BOOK-DEMO-1",
+        "claim_id": "4a275fface1183aca31045fefb890ca6",
+        "result_sha": "c14142a75845375970550dbace753fdb20a396c1a31324c2eac067dc5f4a4ab2",
+        "review_sha": "40c7f569832eda71d1a5313cd7862c6541c198a84a44f9d41438e8064bd2722f",
+        "state": "verified",
+        "receipt": "LOCAL FILE: accepted-result.json; exact byte readback"
+      }
+    ],
+    "events": [
+      {
+        "n": 1,
+        "at": 1790612984.413258,
+        "action": "scan_reserved",
+        "unit": null,
+        "details": "{\"scan\": \"12defd0745ab82ecf0177378381d72a4\"}"
+      },
+      {
+        "n": 2,
+        "at": 1790612984.414283,
+        "action": "claimed",
+        "unit": "BOOK-DEMO-1",
+        "details": "{\"approval\": \"fictional-demonstration-only\", \"claim\": \"4a275fface1183aca31045fefb890ca6\", \"expires\": 1790613484.414283, \"owner\": \"worker-0\", \"scan\": \"12defd0745ab82ecf0177378381d72a4\"}"
+      },
+      {
+        "n": 3,
+        "at": 1790612984.422364,
+        "action": "scan_reserved",
+        "unit": null,
+        "details": "{\"scan\": \"0bde17ef735b4a58d1d3e729c3756481\"}"
+      },
+      {
+        "n": 4,
+        "at": 1790612984.4232209,
+        "action": "nothing_eligible",
+        "unit": null,
+        "details": "{\"reasons\": {\"BOOK-DEMO-1\": \"authority_consumed\"}, \"scan\": \"0bde17ef735b4a58d1d3e729c3756481\"}"
+      },
+      {
+        "n": 5,
+        "at": 1790612984.428213,
+        "action": "board_claim_verified",
+        "unit": "BOOK-DEMO-1",
+        "details": "{\"receipt\": \"LOCAL FIXTURE: simulated board transition, not a Jira write\"}"
+      },
+      {
+        "n": 6,
+        "at": 1790612984.4295309,
+        "action": "result_staged",
+        "unit": "BOOK-DEMO-1",
+        "details": "{\"result_sha\": \"c14142a75845375970550dbace753fdb20a396c1a31324c2eac067dc5f4a4ab2\"}"
+      },
+      {
+        "n": 7,
+        "at": 1790612984.430293,
+        "action": "publication_reserved",
+        "unit": "BOOK-DEMO-1",
+        "details": "{\"result_sha\": \"c14142a75845375970550dbace753fdb20a396c1a31324c2eac067dc5f4a4ab2\"}"
+      },
+      {
+        "n": 8,
+        "at": 1790612984.431148,
+        "action": "publication_verified",
+        "unit": "BOOK-DEMO-1",
+        "details": "{\"receipt\": \"LOCAL FILE: accepted-result.json; exact byte readback\"}"
+      },
+      {
+        "n": 9,
+        "at": 1790612984.432437,
+        "action": "stopped",
+        "unit": null,
+        "details": "{\"reason\": \"local qualification complete; no further scan or work admitted\"}"
+      }
+    ],
+    "human_acceptance": "not granted by this controller"
+  }
+}

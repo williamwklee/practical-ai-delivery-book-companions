@@ -1,0 +1,27 @@
+{
+  "choice": "Oak",
+  "comparison": [
+    {
+      "source": "S1",
+      "seats": 24,
+      "step_free": true,
+      "price_gbp": 120,
+      "meets_request": true
+    },
+    {
+      "source": "S2",
+      "seats": 30,
+      "step_free": false,
+      "price_gbp": 90,
+      "meets_request": false
+    },
+    {
+      "source": "S3",
+      "seats": 16,
+      "step_free": true,
+      "price_gbp": 85,
+      "meets_request": false
+    }
+  ],
+  "summary": "Recommend Oak: its 24 seats, step-free access and GBP120 price meet all requirements. Birch fails because it lacks step-free access. Elm fails because its 16 seats cannot accommodate 20 people. This comparison uses only the supplied fictional source cards and makes no real-world venue claims."
+}

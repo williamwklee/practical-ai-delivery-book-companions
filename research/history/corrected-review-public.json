@@ -1,0 +1,114 @@
+{
+  "unit": "DEV-83",
+  "step": "corrected-review",
+  "provider": "claude",
+  "role": "checker",
+  "auth": {
+    "method": "oauth_token",
+    "account_identifier": "not published; CLI manages login",
+    "subscription_tier": null,
+    "api_provider": "firstParty"
+  },
+  "binding": {
+    "candidate_sha256": "2471154593f5b1f178881e899eb34d08c7742e558c7920b643480de1ae437310",
+    "hash_scope": "exact corrected.json bytes; original source pack and actual supplemental history supplied",
+    "prompt_sha256": "2206ca4f21df6488ee2631d9dac1662157b481b4b608b7e25de4774d0f04a793"
+  },
+  "fresh_jira_read_at": 1790640558.883,
+  "fresh_status": "In Progress",
+  "shared_tool_actor": "712020:5c878ca9-9530-4d92-a189-9c2b4248190f",
+  "process_record": {
+    "schema_version": 3,
+    "unit": "DEV-83",
+    "run_id": "e3e72a8f751e42cd8118ebd90e87eff1",
+    "attempt_id": "attempt-c3e5490fe7c841bf964bb448d54e1f8e",
+    "candidate_version": "corrected-review",
+    "candidate_sha256": "2471154593f5b1f178881e899eb34d08c7742e558c7920b643480de1ae437310",
+    "candidate_hash_scope": "exact corrected.json bytes; original source pack and actual supplemental history supplied",
+    "authenticated_principal": "consumer CLI subscription sign-in; shared-tool identity tested separately",
+    "cli_version": "2.1.274 (Claude Code)",
+    "effort": "high",
+    "profile_sha256": "722f21e38f01e4f68f3d76e8d2a28df0590fd68fa708e5777b736275a6e366e9",
+    "role": "checker",
+    "executable": "claude",
+    "argv_sha256": "722f21e38f01e4f68f3d76e8d2a28df0590fd68fa708e5777b736275a6e366e9",
+    "prompt_sha256": "2206ca4f21df6488ee2631d9dac1662157b481b4b608b7e25de4774d0f04a793",
+    "started_utc": "2026-09-29T00:09:19.190972+00:00",
+    "ended_utc": "2026-09-29T00:10:29.121758+00:00",
+    "elapsed_seconds": 69.931,
+    "limits": {
+      "elapsed_seconds": 479.99899983406067,
+      "first_output_seconds": 60,
+      "idle_output_seconds": 300,
+      "output_bytes": 2000000,
+      "termination_grace_seconds": 0.2,
+      "automatic_retries": 0
+    },
+    "exit_code": 0,
+    "stop_reason": null,
+    "process_error_type": null,
+    "termination_signals": [],
+    "live_process_group_survivors": [],
+    "captured_bytes": {
+      "stdout": 41860,
+      "stderr": 0
+    },
+    "observed_bytes": {
+      "stdout": 41860,
+      "stderr": 0
+    },
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "diagnostic": "completed",
+    "result": {
+      "event_count": 59,
+      "malformed_lines": 0,
+      "terminal_event_valid": true,
+      "reported_failure": false,
+      "usage_valid": true,
+      "usage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 5429,
+          "outputTokens": 17,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.005514,
+          "contextWindow": 200000,
+          "maxOutputTokens": 32000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-haiku-4-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        },
+        "claude-opus-5": {
+          "inputTokens": 2,
+          "outputTokens": 6673,
+          "cacheReadInputTokens": 2284,
+          "cacheCreationInputTokens": 6565,
+          "webSearchRequests": 0,
+          "costUSD": 0.23362700000000003,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 64000,
+          "thinkingTokens": 6596,
+          "canonicalModel": "claude-opus-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "reported_models": [
+        "claude-opus-5"
+      ],
+      "requested_model": "claude-opus-5",
+      "model_event_valid": true,
+      "synthetic": false
+    },
+    "server_model_evidence": "reported in Claude assistant event",
+    "subscription_quota_remaining": null,
+    "hard_token_or_dollar_cap_claimed": false,
+    "qualification_mode": "live consumer CLI with subscription sign-in",
+    "success": true,
+    "final_sha256": "0325c699f358124bae269b4a24a1b7e1984bd7fc1bd76784536d2b73309c9497"
+  },
+  "controller_settlement": "settled",
+  "public_output": "```json\n{\n  \"candidate_sha256\": \"2471154593f5b1f178881e899eb34d08c7742e558c7920b643480de1ae437310\",\n  \"verdict\": \"PASS\",\n  \"findings\": []\n}\n```"
+}

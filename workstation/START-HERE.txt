@@ -1,0 +1,17 @@
+PUBLIC EDITION COMPANION — workstation
+
+Use the book’s Companion files appendix and the root START-HERE.txt. Historical task/page/commit identifiers below describe the recorded exercise, not access you need. Follow the local commands only after reading their stated limits.
+
+WORKSTATION TRIAL — CHAPTER 03
+
+These files accompany the ebook through the public companion repository. Download and extract the version linked in the root START-HERE.txt; keep the folder layout. No access to the publisher’s private tools is needed.
+
+1. Read the canonical chapter and confirm accounts, permission and finite trial authority.
+2. Open a terminal in runner/pdca and follow its README launch commands. Preserve the existing ledger, STOP marker and partial results if the attempt stops. The source is the exercised room-comparison reference, not a general-purpose output verifier.
+3. Open visuals/flow-before.drawio in local draw.io, edit native labels and re-export. Keep the source separately. The reference after files show the actual exercised revision.
+
+Canonical: [publisher archive; this edition supplies the files locally]
+Full source/evidence: [publisher archive; this edition supplies the files locally]
+Project provenance, not reader access prerequisite: runner commit66915f060d92f4f43339fad96c36c64e3708a0e6 and visuals commit4d92400ee02a530c52e911577278beb5fb908730 in williamwklee/practical-ai-delivery-book.
+
+Python3 plus the two consumer CLIs are required for the trial. No model API key or custom gateway. The trial ceilings are four primary CLI processes,20minutes,one correction,zero retries. The native .drawio files contain separate editable objects and connectors. Confluence is the readable source of truth; this archive is a convenient companion copy.

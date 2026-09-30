@@ -1,0 +1,163 @@
+[
+  {
+    "phase": "Plan",
+    "message": "Admitted local attempt; external authority and shared ledger are operator prerequisites.",
+    "at": 1790531969.260111
+  },
+  {
+    "phase": "Do",
+    "message": "Operator-supplied labelled test seed; not fresh AI production.",
+    "at": 1790531969.260492
+  },
+  {
+    "phase": "Check",
+    "message": "check",
+    "at": 1790531969.261184,
+    "provider": "claude",
+    "candidate_sha256": "5fbebd9bee87c8067fdff81a1af01d0415372812e7843a7e5305b640a8b61fce",
+    "call": 1
+  },
+  {
+    "phase": "Check",
+    "message": "Checker and exact-data checks preserved.",
+    "at": 1790531985.597059,
+    "review": {
+      "candidate_sha256": "5fbebd9bee87c8067fdff81a1af01d0415372812e7843a7e5305b640a8b61fce",
+      "verdict": "CORRECT",
+      "findings": [
+        {
+          "id": "F1-choice-fails-step-free",
+          "evidence": [
+            "S2"
+          ],
+          "reason": "The chosen room Birch (S2) has step_free=false, but the original request makes step-free access a hard requirement (constraints.step_free_required=true). The choice therefore violates a stated constraint and is invalid."
+        },
+        {
+          "id": "F2-choice-contradicts-own-comparison",
+          "evidence": [
+            "S2"
+          ],
+          "reason": "The candidate's own comparison row for S2 sets meets_request=false, yet S2 (Birch) is named as choice. The candidate is internally inconsistent: it selects a room it has itself judged not to meet the request."
+        },
+        {
+          "id": "F3-correct-option-rejected",
+          "evidence": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "reason": "Oak (S1) is the only source satisfying all three constraints (seats 24 >= 20, step_free=true, price GBP120 <= 150); Birch (S2) fails step-free and Elm (S3) fails minimum seats (16 < 20). The choice should be Oak, and it is the sole qualifying option rather than one of several."
+        },
+        {
+          "id": "F4-rationale-uses-wrong-criterion",
+          "evidence": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "reason": "The summary justifies the pick solely as 'lower price', but price is a ceiling (max GBP150), not a ranking criterion, in the original request. Selecting the cheapest room while ignoring eligibility misapplies the stated constraints; S1 at GBP120 is already within budget."
+        },
+        {
+          "id": "F5-summary-omits-required-content",
+          "evidence": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "reason": "The request asks for an explanation of the choice and why the alternatives fail; the summary explains neither. It gives no per-alternative rejection reasons (S2 step-free failure, S3 seat shortfall) and instead states that it 'intentionally omits the access requirement', which is an acknowledged failure to meet the request rather than a limitation of the fictional data."
+        }
+      ]
+    },
+    "deterministic_findings": [
+      "ineligible_choice"
+    ]
+  },
+  {
+    "phase": "Act",
+    "message": "correct",
+    "at": 1790531985.5979881,
+    "provider": "codex",
+    "candidate_sha256": "5fbebd9bee87c8067fdff81a1af01d0415372812e7843a7e5305b640a8b61fce",
+    "call": 2
+  },
+  {
+    "phase": "Act",
+    "message": "Producer dispositions; checker will re-evaluate changed candidate.",
+    "at": 1790532012.059273,
+    "dispositions": [
+      {
+        "id": "F1-choice-fails-step-free",
+        "action": "applied",
+        "evidence": [
+          "S1",
+          "S2"
+        ],
+        "reason": "Birch lacks the required step-free access. Changed the choice to Oak, which satisfies that requirement and the capacity and budget constraints."
+      },
+      {
+        "id": "F2-choice-contradicts-own-comparison",
+        "action": "applied",
+        "evidence": [
+          "S1",
+          "S2"
+        ],
+        "reason": "The original choice selected Birch despite its correctly recorded meets_request=false. Choosing Oak makes the recommendation consistent with the comparison."
+      },
+      {
+        "id": "F3-correct-option-rejected",
+        "action": "applied",
+        "evidence": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "reason": "Oak alone meets all three constraints. Birch fails access, and Elm fails capacity. The corrected summary identifies Oak as the sole qualifying option."
+      },
+      {
+        "id": "F4-rationale-uses-wrong-criterion",
+        "action": "applied",
+        "evidence": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "reason": "Replaced the lower-price rationale with eligibility against all required constraints. The request specifies a price ceiling, not price ranking. One detail of the finding is inaccurate: Birch is not the cheapest room; Elm costs GBP85 versus Birch's GBP90. This does not undermine the supported correction."
+      },
+      {
+        "id": "F5-summary-omits-required-content",
+        "action": "applied",
+        "evidence": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "reason": "The corrected summary explains Oak's qualification, Birch's access failure, Elm's seat shortfall, and the limits of relying exclusively on fictional data."
+      }
+    ]
+  },
+  {
+    "phase": "Check",
+    "message": "check",
+    "at": 1790532012.060928,
+    "provider": "claude",
+    "candidate_sha256": "e800b37800ee99bc24965ee5d9bacbdf90b6a35ebd7defb2e8fd32632abc0d60",
+    "call": 3
+  },
+  {
+    "phase": "Check",
+    "message": "Checker and exact-data checks preserved.",
+    "at": 1790532018.691529,
+    "review": {
+      "candidate_sha256": "e800b37800ee99bc24965ee5d9bacbdf90b6a35ebd7defb2e8fd32632abc0d60",
+      "verdict": "PASS",
+      "findings": []
+    },
+    "deterministic_findings": []
+  },
+  {
+    "phase": "Act",
+    "message": "independent_pass_and_fixture_checks_pass",
+    "at": 1790532018.692383,
+    "disposition": "READY_FOR_PUBLICATION"
+  }
+]

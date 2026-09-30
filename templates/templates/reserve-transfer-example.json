@@ -1,0 +1,40 @@
+{
+  "example_only": true,
+  "actual_transfer": false,
+  "actual_jira_mutations": 0,
+  "transfer_id": "SAMPLE-DEV69-IMAGE-01",
+  "donor": "DEV-69 proposed earmark",
+  "receiver": "SAMPLE-MAINTENANCE-01 (not a real ticket)",
+  "before": {
+    "definition_history": {
+      "minutes": 420,
+      "launches": 14
+    },
+    "unallocated_image_reserve": {
+      "minutes": 60,
+      "launches": 2
+    },
+    "maintenance": {
+      "minutes": 0,
+      "launches": 0
+    }
+  },
+  "after": {
+    "definition_history": {
+      "minutes": 420,
+      "launches": 14
+    },
+    "unallocated_image_reserve": {
+      "minutes": 0,
+      "launches": 0
+    },
+    "maintenance": {
+      "minutes": 60,
+      "launches": 2
+    }
+  },
+  "maximum_locations": 5,
+  "replay_rule": "same transfer ID is already allocated; no second debit or credit",
+  "consumed_and_unsettled": "not supplied for the real DEV-69 reserve; example does not establish usable balance",
+  "authority": "none created by this example; reconcile and obtain actual approval before any real admission"
+}

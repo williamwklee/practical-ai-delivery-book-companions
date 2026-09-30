@@ -1,0 +1,71 @@
+[
+  {
+    "phase": "Plan",
+    "message": "Admitted local attempt; external authority and shared ledger are operator prerequisites.",
+    "at": 1790531912.777715
+  },
+  {
+    "phase": "Do",
+    "message": "Operator-supplied labelled test seed; not fresh AI production.",
+    "at": 1790531912.778025
+  },
+  {
+    "phase": "Check",
+    "message": "check",
+    "at": 1790531912.778699,
+    "provider": "claude",
+    "candidate_sha256": "5fbebd9bee87c8067fdff81a1af01d0415372812e7843a7e5305b640a8b61fce",
+    "call": 1
+  },
+  {
+    "phase": "Check",
+    "message": "Checker and exact-data checks preserved.",
+    "at": 1790531912.779289,
+    "review": {
+      "candidate_sha256": "5fbebd9bee87c8067fdff81a1af01d0415372812e7843a7e5305b640a8b61fce",
+      "verdict": "CORRECT",
+      "findings": [
+        {
+          "id": "F1",
+          "evidence": [
+            "S2"
+          ],
+          "reason": "Birch is not step-free."
+        }
+      ]
+    },
+    "deterministic_findings": [
+      "ineligible_choice"
+    ]
+  },
+  {
+    "phase": "Act",
+    "message": "correct",
+    "at": 1790531912.77982,
+    "provider": "codex",
+    "candidate_sha256": "5fbebd9bee87c8067fdff81a1af01d0415372812e7843a7e5305b640a8b61fce",
+    "call": 2
+  },
+  {
+    "phase": "Act",
+    "message": "Producer dispositions; checker will re-evaluate changed candidate.",
+    "at": 1790531912.7803829,
+    "dispositions": [
+      {
+        "id": "F1",
+        "action": "applied",
+        "evidence": [
+          "S1",
+          "S2"
+        ],
+        "reason": "Recommend Oak; Birch fails access."
+      }
+    ]
+  },
+  {
+    "phase": "Act",
+    "message": "no_progress_unchanged_candidate",
+    "at": 1790531912.780997,
+    "disposition": "STOP"
+  }
+]

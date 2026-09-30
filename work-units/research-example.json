@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "unit_id": "SAMPLE-RESEARCH-01",
+  "title": "Draft a one-page comparison of three fictional meeting rooms",
+  "original_intent": "Choose a room for 20 people, with step-free access, within GBP150. Explain the choice using the supplied fictional data.",
+  "outcome": "One readable comparison page with a recommendation and a small comparison table; linked CSV companion.",
+  "scope_boundary": "Use only the supplied fictional dataset. No booking, payment, personal data or claim about real venues. This is a sample definition, not an approved Jira task.",
+  "inputs": [
+    {
+      "id": "rooms",
+      "location": "inputs/rooms.csv",
+      "version": "fixture-v1",
+      "check": "SHA-256 a8c7a885869020caefef5d7bd690f6acb2aa770fe07bde62bceb8f90157ac9e8; verify all three rows and required fields."
+    }
+  ],
+  "acceptance": [
+    {
+      "id": "AC1",
+      "criterion": "Compare all three rooms on seats, step-free access and price; recommend only a room meeting all three requirements.",
+      "method": "Recompute the criteria from each source row and check the written recommendation.",
+      "evidence": "Confluence comparison and source/check table."
+    },
+    {
+      "id": "AC2",
+      "criterion": "Give an independent reviewer the original request, full candidate and data; resolve supported findings, preserving disagreements.",
+      "method": "Actual second AI CLI reviews supplied sources; producer adjudicates and repeats within the remaining allowance.",
+      "evidence": "Full review/correction record and native run metadata in Confluence."
+    },
+    {
+      "id": "AC3",
+      "criterion": "Publish complete readable text and any visuals or registered placeholders to Confluence; exact companion version in GitHub.",
+      "method": "Read saved text, links and visuals; check every placeholder against the separate inventory.",
+      "evidence": "Canonical page and attachment versions, inventory IDs or explicit nil return, immutable commit and file hash."
+    }
+  ],
+  "roles": {
+    "producer": "Codex / ChatGPT",
+    "reviewer": "Claude Code Opus High; complete-source read/review, no direct write prerequisite",
+    "publisher": "ChatGPT, including honestly attributed Claude reports",
+    "human_approver": "Named human approver; approval and final acceptance are separate decisions"
+  },
+  "limits": {
+    "primary_launches": 10,
+    "active_seconds": 7200,
+    "reviews": 3,
+    "corrections": 2,
+    "transient_retries": 3,
+    "stalled_cycles": 2
+  },
+  "destinations": {
+    "confluence_parent": "https://example.invalid/confluence/parent",
+    "visual_inventory": "https://example.invalid/confluence/visual-inventory",
+    "github_repository": "https://example.invalid/github/repository"
+  },
+  "stop_rule": "Stop on manual stop, missing required input, unverified approval, ownership conflict, unknown/pending counters, exhausted time/launch/review/correction limits, repeated no progress, quota/authentication failure or missing required result evidence. Preserve partial output and counters; no account switching or paid API fallback.",
+  "resume_rule": "Read current Jira status and native dependencies; verify owner and authority, unchanged source versions and durable consumed/reserved counts. Resolve transient faults within unchanged limits. A substantive/manual stop or a cap/scope increase requires recorded authority. Never reset counts by restarting, copying a folder or splitting a ticket.",
+  "dependencies": []
+}

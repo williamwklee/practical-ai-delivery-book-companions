@@ -1,0 +1,4 @@
+source,room,seats,total_gbp,step_free,start,end
+S1,Oak,24,120,true,09:00,12:00
+S2,Birch,30,90,false,09:00,12:00
+S3,Elm,16,85,true,09:00,12:00

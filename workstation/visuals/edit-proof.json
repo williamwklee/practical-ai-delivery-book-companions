@@ -1,0 +1,29 @@
+{
+  "retrieved_from_commit": "66915f060d92f4f43339fad96c36c64e3708a0e6",
+  "repository_path": "runner/pdca/flow.drawio",
+  "before_sha256": "b16f3e25a2b50af1ab5f4bfc02e264f79a9d8ff0430c4039f0102ddda703c3d0",
+  "after_sha256": "44a1928c18cfa42dc407adf6a51da385c49c7388172698ba00ee67c816d82906",
+  "edit_method": "native XML attributes edited by Codex; actual local draw.io Desktop re-export; no claimed GUI manipulation",
+  "changes": [
+    {
+      "id": "title",
+      "before": "ONE WORK UNIT \u00b7 MANUALLY STARTED \u00b7 FINITE LIMITS",
+      "after": "WORKSTATION TRIAL \u00b7 ONE TASK \u00b7 FINITE LIMITS"
+    },
+    {
+      "id": "plan",
+      "before": "PLAN\nOriginal request + sources\nOwner + finite allowance",
+      "after": "PLAN\nOne small task + sources\nOwner + finite allowance"
+    }
+  ],
+  "vertices": 8,
+  "connectors": 6,
+  "png_dimensions": [
+    1524,
+    772
+  ],
+  "local_visual_inspection": "passed: changed labels, arrows and full figure readable",
+  "original_occurrence": "DEV78 page75663367 BOOK-VIS-003 unchanged",
+  "new_occurrence": "BOOK-VIS-004 Chapter03 page75729231, Keep the diagram editable, after descriptive caption, before revision paragraph",
+  "browser_rendering_inspected": false
+}

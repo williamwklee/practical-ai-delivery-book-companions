@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" version="31.4.5" type="device">
+  <diagram id="BOOK-VIS-008" name="Limits and stopping">
+    <mxGraphModel dx="1420" dy="580" grid="1" gridSize="10" page="1" pageWidth="1450" pageHeight="650">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="approved" value="Approved work&#10;Same owner and record" style="rounded=1;whiteSpace=wrap;html=0;fontSize=20;fillColor=#dae8fc;strokeColor=#555555;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="30" y="80" width="270" height="100" />
+        </mxCell>
+        <mxCell id="reserve" value="Reserve first&#10;Unit + overall allowance" style="rounded=1;whiteSpace=wrap;html=0;fontSize=20;fillColor=#dae8fc;strokeColor=#555555;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="370" y="80" width="270" height="100" />
+        </mxCell>
+        <mxCell id="run" value="Run one CLI&#10;Finite time and output" style="rounded=1;whiteSpace=wrap;html=0;fontSize=20;fillColor=#d5e8d4;strokeColor=#555555;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="710" y="80" width="270" height="100" />
+        </mxCell>
+        <mxCell id="result" value="Record the result&#10;Keep usage and evidence" style="rounded=1;whiteSpace=wrap;html=0;fontSize=20;fillColor=#d5e8d4;strokeColor=#555555;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1050" y="80" width="270" height="100" />
+        </mxCell>
+        <mxCell id="stop" value="Stop on a limit or failure&#10;No automatic new attempt" style="rounded=1;whiteSpace=wrap;html=0;fontSize=20;fillColor=#f8cecc;strokeColor=#555555;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1050" y="300" width="270" height="100" />
+        </mxCell>
+        <mxCell id="keep" value="Keep the record&#10;Partial output + used slots" style="rounded=1;whiteSpace=wrap;html=0;fontSize=20;fillColor=#f8cecc;strokeColor=#555555;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="710" y="300" width="270" height="100" />
+        </mxCell>
+        <mxCell id="decide" value="Resolve the cause&#10;Check resume authority" style="rounded=1;whiteSpace=wrap;html=0;fontSize=20;fillColor=#ffe6cc;strokeColor=#555555;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="370" y="300" width="270" height="100" />
+        </mxCell>
+        <mxCell id="resume" value="Resume the same record&#10;Remaining allowance only" style="rounded=1;whiteSpace=wrap;html=0;fontSize=20;fillColor=#ffe6cc;strokeColor=#555555;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="30" y="300" width="270" height="100" />
+        </mxCell>
+        <mxCell id="edge0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=15;strokeColor=#555555;" edge="1" parent="1" source="approved" target="reserve">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge1" value="admitted" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=15;strokeColor=#555555;" edge="1" parent="1" source="reserve" target="run">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="offset" x="0" y="-15" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=15;strokeColor=#555555;" edge="1" parent="1" source="run" target="result">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge3" value="stop condition" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=15;strokeColor=#555555;" edge="1" parent="1" source="result" target="stop">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="offset" x="0" y="-15" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=15;strokeColor=#555555;" edge="1" parent="1" source="stop" target="keep">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=15;strokeColor=#555555;" edge="1" parent="1" source="keep" target="decide">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge6" value="permitted" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=15;strokeColor=#555555;" edge="1" parent="1" source="decide" target="resume">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="offset" x="0" y="-15" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7" value="recheck" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;fontSize=15;strokeColor=#555555;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="resume" target="reserve">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="offset" x="0" y="-15" />
+            <Array as="points">
+              <mxPoint x="165" y="230" />
+              <mxPoint x="505" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

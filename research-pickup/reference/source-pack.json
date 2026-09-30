@@ -1,0 +1,68 @@
+{
+  "unit": "DEV-83",
+  "question": "Can one unusually wet month establish that a local climate is getting wetter, and what further evidence is needed?",
+  "audience": "Community newsletter editor; no scientific or programming background assumed",
+  "scope": "A sourced explanatory brief, not a forecast, local trend study or attribution analysis",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "What is climate?",
+      "publisher": "Met Office",
+      "url": "https://weather.metoffice.gov.uk/climate/climate-explained/what-is-climate",
+      "accessed": "2026-09-29",
+      "section": "Opening definition; Observing our climate and changes in climate data",
+      "excerpt": "We usually define a region’s climate over a period of 30 years.",
+      "notes": "Weather varies over short intervals; climate describes longer-term conditions. Comparing a month with a same-month long-term baseline describes an anomaly. It does not alone establish a trend. The last sentence is this report’s inference from the timescale distinction, not a quoted study result.",
+      "limits": "General explanation, not local rainfall observations or a local trend estimate."
+    },
+    {
+      "id": "S2",
+      "title": "U.S. Climate Normals",
+      "publisher": "NOAA NCEI",
+      "url": "https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals",
+      "accessed": "2026-09-29",
+      "section": "Opening overview; Full Access; Overview",
+      "excerpt": "The official normals are calculated for a uniform 30 year period",
+      "notes": "The page identifies1991–2020 as the current official U.S.30-year normals, alongside supplemental15-year products. A monthly normal averages that calendar month across years; it is not a30-month average. Regional and seasonal changes differ. Use the source for the method, not as a UK station data source.",
+      "limits": "U.S. product, no fictional-town observations. The page also mentions near-future predictive uses; that does not turn one monthly anomaly into a measured long-term trend."
+    },
+    {
+      "id": "S3",
+      "title": "Why Attribution?",
+      "publisher": "NOAA Physical Sciences Laboratory",
+      "url": "https://psl.noaa.gov/csi/why/",
+      "accessed": "2026-09-29",
+      "section": "Paragraph beginning The science of attribution",
+      "excerpt": "The science of attribution relies on multiple lines of evidence",
+      "notes": "Attribution investigates causes using multiple evidence sources and model analyses. Describing an unusually wet month and explaining its causes are different tasks. A single dataset or tool generally does not establish attribution.",
+      "limits": "Methodological explanation with historical examples; no attribution result for this exercise."
+    },
+    {
+      "id": "S4",
+      "title": "Attributing extreme weather to climate change",
+      "publisher": "Met Office",
+      "url": "https://www.metoffice.gov.uk/research/climate/understanding-climate/attributing-extreme-weather-to-climate-change",
+      "accessed": "2026-09-29",
+      "section": "How do we link extreme weather to climate change?; Climate change attribution studies and model simulations",
+      "excerpt": "Scientists can look at specific weather events and see if climate change was a factor.",
+      "notes": "This qualifies the tempting overcorrection that individual events can never be linked to climate change. Event-specific attribution studies compare simulations with and without human influence, alongside observations and other inputs. No such study was performed for the fictional month.",
+      "limits": "General method; we do not repeat its historical temperature-record superlative as a current record claim."
+    }
+  ],
+  "fictional_input": {
+    "place": "Example Town (fictional)",
+    "calendar_month": "September",
+    "monthly_rainfall_mm": 100,
+    "same_month_1991_2020_normal_mm": 80,
+    "normal_is_assumed_for_exercise_not_calculated_from_observations": true
+  },
+  "acceptance": [
+    "Answer the question plainly and cite source IDs/links",
+    "Distinguish an anomaly, trend and attribution; do not assert that attribution of individual events is impossible",
+    "State fictional input and show20mm,25percent above baseline,125percent of baseline",
+    "Identify missing local time series, measurement comparability and uncertainty; no probability/extreme classification inferred",
+    "Keep recommended wording suitable for a nontechnical newsletter",
+    "Preserve caught seed, all findings, source-backed dispositions, stopped-source record and consumed resources"
+  ],
+  "output": "JSON object with report_markdown string and dispositions list; report up to550words, no other fields; only brief source paraphrases, no extended quotations"
+}

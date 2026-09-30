@@ -1,0 +1,8 @@
+{
+  "disposition": "READY_FOR_PUBLICATION",
+  "reason": "independent_pass_and_fixture_checks_pass",
+  "calls_reserved": 3,
+  "candidate_sha256": "e800b37800ee99bc24965ee5d9bacbdf90b6a35ebd7defb2e8fd32632abc0d60",
+  "deadline": 1790533169.259819,
+  "human_acceptance": "not granted by this runner"
+}

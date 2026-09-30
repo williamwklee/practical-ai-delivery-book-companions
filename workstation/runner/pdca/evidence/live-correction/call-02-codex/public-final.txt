@@ -1,0 +1,43 @@
+{
+  "candidate": {
+    "choice": "Oak",
+    "comparison": [
+      {"source": "S1", "seats": 24, "step_free": true, "price_gbp": 120, "meets_request": true},
+      {"source": "S2", "seats": 30, "step_free": false, "price_gbp": 90, "meets_request": false},
+      {"source": "S3", "seats": 16, "step_free": true, "price_gbp": 85, "meets_request": false}
+    ],
+    "summary": "Recommend Oak, the only qualifying room: its 24 seats accommodate 20 people, it has step-free access, and its GBP120 price is within the GBP150 limit. Birch fails because it lacks step-free access. Elm fails because its 16 seats are four short. This recommendation uses only the fictional source cards and establishes no real-world venue facts or availability."
+  },
+  "dispositions": [
+    {
+      "id": "F1-choice-fails-step-free",
+      "action": "applied",
+      "evidence": ["S1", "S2"],
+      "reason": "Birch lacks the required step-free access. Changed the choice to Oak, which satisfies that requirement and the capacity and budget constraints."
+    },
+    {
+      "id": "F2-choice-contradicts-own-comparison",
+      "action": "applied",
+      "evidence": ["S1", "S2"],
+      "reason": "The original choice selected Birch despite its correctly recorded meets_request=false. Choosing Oak makes the recommendation consistent with the comparison."
+    },
+    {
+      "id": "F3-correct-option-rejected",
+      "action": "applied",
+      "evidence": ["S1", "S2", "S3"],
+      "reason": "Oak alone meets all three constraints. Birch fails access, and Elm fails capacity. The corrected summary identifies Oak as the sole qualifying option."
+    },
+    {
+      "id": "F4-rationale-uses-wrong-criterion",
+      "action": "applied",
+      "evidence": ["S1", "S2", "S3"],
+      "reason": "Replaced the lower-price rationale with eligibility against all required constraints. The request specifies a price ceiling, not price ranking. One detail of the finding is inaccurate: Birch is not the cheapest room; Elm costs GBP85 versus Birch's GBP90. This does not undermine the supported correction."
+    },
+    {
+      "id": "F5-summary-omits-required-content",
+      "action": "applied",
+      "evidence": ["S1", "S2", "S3"],
+      "reason": "The corrected summary explains Oak's qualification, Birch's access failure, Elm's seat shortfall, and the limits of relying exclusively on fictional data."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "unit": "DEV-83",
+  "step": "seed-review",
+  "provider": "claude",
+  "role": "checker",
+  "auth": {
+    "method": "oauth_token",
+    "account_identifier": "not published; CLI manages login",
+    "subscription_tier": null,
+    "api_provider": "firstParty"
+  },
+  "binding": {
+    "candidate_sha256": "aedfec35f3cb6e58f48a14258784343688ffe1c8968e81768acd1b32d86b20e3",
+    "hash_scope": "exact seed.json bytes",
+    "prompt_sha256": "c7624270649f88625abc45ccc27cc7d25bbeb7ddfa93b8064111dac3798520a8"
+  },
+  "fresh_jira_read_at": 1790640339.844,
+  "fresh_status": "In Progress",
+  "shared_tool_actor": "712020:5c878ca9-9530-4d92-a189-9c2b4248190f",
+  "process_record": {
+    "schema_version": 3,
+    "unit": "DEV-83",
+    "run_id": "f9612dfe779740b5abe79a9e34b166b5",
+    "attempt_id": "attempt-cdad93becb1d4c30a3ec4a23f906e922",
+    "candidate_version": "seed-review",
+    "candidate_sha256": "aedfec35f3cb6e58f48a14258784343688ffe1c8968e81768acd1b32d86b20e3",
+    "candidate_hash_scope": "exact seed.json bytes",
+    "authenticated_principal": "consumer CLI subscription sign-in; shared-tool identity tested separately",
+    "cli_version": "2.1.274 (Claude Code)",
+    "effort": "high",
+    "profile_sha256": "722f21e38f01e4f68f3d76e8d2a28df0590fd68fa708e5777b736275a6e366e9",
+    "role": "checker",
+    "executable": "claude",
+    "argv_sha256": "722f21e38f01e4f68f3d76e8d2a28df0590fd68fa708e5777b736275a6e366e9",
+    "prompt_sha256": "c7624270649f88625abc45ccc27cc7d25bbeb7ddfa93b8064111dac3798520a8",
+    "started_utc": "2026-09-29T00:05:40.116055+00:00",
+    "ended_utc": "2026-09-29T00:06:22.917133+00:00",
+    "elapsed_seconds": 42.801,
+    "limits": {
+      "elapsed_seconds": 479.99905800819397,
+      "first_output_seconds": 60,
+      "idle_output_seconds": 300,
+      "output_bytes": 2000000,
+      "termination_grace_seconds": 0.2,
+      "automatic_retries": 0
+    },
+    "exit_code": 0,
+    "stop_reason": null,
+    "process_error_type": null,
+    "termination_signals": [],
+    "live_process_group_survivors": [],
+    "captured_bytes": {
+      "stdout": 28384,
+      "stderr": 0
+    },
+    "observed_bytes": {
+      "stdout": 28384,
+      "stderr": 0
+    },
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "diagnostic": "completed",
+    "result": {
+      "event_count": 18,
+      "malformed_lines": 0,
+      "terminal_event_valid": true,
+      "reported_failure": false,
+      "usage_valid": true,
+      "usage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 2253,
+          "outputTokens": 17,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.002338,
+          "contextWindow": 200000,
+          "maxOutputTokens": 32000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-haiku-4-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        },
+        "claude-opus-5": {
+          "inputTokens": 2,
+          "outputTokens": 3762,
+          "cacheReadInputTokens": 2284,
+          "cacheCreationInputTokens": 2158,
+          "webSearchRequests": 0,
+          "costUSD": 0.11678200000000001,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 64000,
+          "thinkingTokens": 1428,
+          "canonicalModel": "claude-opus-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "reported_models": [
+        "claude-opus-5"
+      ],
+      "requested_model": "claude-opus-5",
+      "model_event_valid": true,
+      "synthetic": false
+    },
+    "server_model_evidence": "reported in Claude assistant event",
+    "subscription_quota_remaining": null,
+    "hard_token_or_dollar_cap_claimed": false,
+    "qualification_mode": "live consumer CLI with subscription sign-in",
+    "success": true,
+    "final_sha256": "1eca187ab5cdc641817be67a23396422167a5c239dc494d367e12c07aaedb879"
+  },
+  "controller_settlement": "settled",
+  "public_output": "{\"candidate_sha256\":\"aedfec35f3cb6e58f48a14258784343688ffe1c8968e81768acd1b32d86b20e3\",\"verdict\":\"CORRECT\",\"findings\":[{\"id\":\"F1\",\"problem\":\"Arithmetic error in the percentage comparison. 100mm against an 80mm baseline is 25 percent above baseline (125 percent of baseline), not 125 percent above baseline. The candidate figure would imply roughly 180mm.\",\"evidence\":\"Candidate report_markdown: \\\"That is125% above normal\\\". Fictional input: monthly_rainfall_mm 100, same_month_1991_2020_normal_mm 80. (100-80)/80 = 0.25.\",\"required_correction\":\"Replace with the correct statement: 20mm above the baseline, 25 percent above the baseline, and 125 percent of the baseline.\"},{\"id\":\"F2\",\"problem\":\"Required figures are missing. The acceptance criteria require the absolute difference (20mm), the 25 percent above-baseline figure and the 125 percent of-baseline figure to all be shown; only a single (incorrect) percentage appears.\",\"evidence\":\"Acceptance: \\\"State fictional input and show20mm,25percent above baseline,125percent of baseline\\\". Candidate contains no \\\"20mm\\\" and no \\\"25\\\" figure.\",\"required_correction\":\"Show all three derived figures explicitly alongside the 100mm observation and the 80mm baseline.\"},{\"id\":\"F3\",\"problem\":\"Unsupported inferential leap: a single monthly anomaly is presented as proof of a long-term local rainfall increase. This directly contradicts the supplied source notes and answers the brief's question in the wrong direction.\",\"evidence\":\"Candidate: \\\"so this single month proves a long-term local rainfall increase\\\". S1 notes: \\\"Comparing a month with a same-month long-term baseline describes an anomaly. It does not alone establish a trend.\\\" S2 limits: \\\"that does not turn one monthly anomaly into a measured long-term trend.\\\"\",\"required_correction\":\"State plainly that one unusually wet month is an anomaly relative to the baseline and cannot by itself establish that the local climate is getting wetter; cite S1 and S2.\"},{\"id\":\"F4\",\"problem\":\"Non sequitur that misattributes an inference to S1. The 30-year definition of climate is the reason a single month is insufficient; the candidate reverses it into a claim that any comparison with a normal establishes a trend. S1's notes also flag that the timescale-to-trend point is the report's own inference, not a quoted study result.\",\"evidence\":\"Candidate: \\\"The Met Office defines climate using30years [S1], so a comparison with a normal already establishes a trend.\\\" S1 excerpt: \\\"We usually define a region's climate over a period of 30 years.\\\" S1 notes: \\\"The last sentence is this report's inference from the timescale distinction, not a quoted study result.\\\"\",\"required_correction\":\"Use the 30-year definition to explain why a single month is not a trend, and mark the timescale-to-trend reasoning as the brief's own inference rather than a sourced finding.\"},{\"id\":\"F5\",\"problem\":\"Headline asserts a conclusion the brief is scoped to avoid and that the evidence does not support. The scope is an explanatory brief, not a local trend study.\",\"evidence\":\"Candidate heading: \\\"# Our climate is getting wetter\\\". Scope: \\\"A sourced explanatory brief, not a forecast, local trend study or attribution analysis\\\".\",\"required_correction\":\"Retitle to a neutral, question-framed heading (for example, \\\"Does one wet month mean a wetter climate?\\\") that does not assert a local trend.\"},{\"id\":\"F6\",\"problem\":\"The required conceptual distinction between anomaly, trend and attribution is absent. The brief never mentions attribution, so it neither explains what would be needed to link the month to climate change nor avoids the tempting overcorrection the sources flag.\",\"evidence\":\"Acceptance: \\\"Distinguish an anomaly, trend and attribution; do not assert that attribution of individual events is impossible\\\". Candidate text contains no reference to attribution. S3 excerpt: \\\"The science of attribution relies on multiple lines of evidence\\\". S4 excerpt: \\\"Scientists can look at specific weather events and see if climate change was a factor.\\\"\",\"required_correction\":\"Add a short section distinguishing the three, noting that event attribution is possible via studies comparing simulations with and without human influence (S4) and relies on multiple lines of evidence (S3), and that no such study was done for this fictional month.\"},{\"id\":\"F7\",\"problem\":\"Source traceability is incomplete. Only S1 is cited, S2, S3 and S4 are unused, and no source links are given.\",\"evidence\":\"Acceptance: \\\"Answer the question plainly and cite source IDs/links\\\". Candidate contains a single marker, \\\"[S1]\\\", and no URLs. Sources S2, S3, S4 are supplied but unreferenced.\",\"required_correction\":\"Cite each supplied source by ID with its URL where used, and draw on S2 for the normals method and S3/S4 for attribution.\"},{\"id\":\"F8\",\"problem\":\"Required evidence gaps are not identified, and the brief affirmatively dismisses the main one. The acceptance criteria require naming the missing local time series, measurement comparability and uncertainty.\",\"evidence\":\"Candidate: \\\"We can publish this finding without obtaining a longer local series.\\\" Acceptance: \\\"Identify missing local time series, measurement comparability and uncertainty; no probability/extreme classification inferred\\\".\",\"required_correction\":\"Remove the dismissal and add what further evidence is needed: a long local rainfall time series, comparable measurement methods and station siting over that period, and an account of uncertainty in both the observations and the baseline.\"},{\"id\":\"F9\",\"problem\":\"The baseline is presented without stating that it is assumed for the exercise rather than calculated from observations, so a nontechnical reader may take 80mm as a measured local normal.\",\"evidence\":\"Candidate: \\\"a supplied same-month1991–2020normal of80mm\\\". Fictional input flag: normal_is_assumed_for_exercise_not_calculated_from_observations: true. S2 limits: \\\"U.S. product, no fictional-town observations.\\\"\",\"required_correction\":\"State explicitly that the 80mm baseline is assumed for this illustration and was not computed from Example Town observations, and that S2 is used for the normals method only, not as a data source.\"},{\"id\":\"F10\",\"problem\":\"Required output fields are not populated. The dispositions list is empty, so the caught seed, findings, source-backed dispositions, stopped-source record and consumed resources are not preserved.\",\"evidence\":\"Candidate: \\\"dispositions\\\": []. Acceptance: \\\"Preserve caught seed, all findings, source-backed dispositions, stopped-source record and consumed resources\\\".\",\"required_correction\":\"Populate dispositions with the caught seed error, each finding and its source-backed disposition, any stopped sources, and the resources consumed.\"}]}"
+}

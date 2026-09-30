@@ -1,0 +1,100 @@
+{
+  "version": "corrected",
+  "editable_PPTX": "wet-month-briefing.pptx",
+  "PPTX_sha256": "3392528e43ccb92b5dbf968eef2d1ffd0f75e1187f1e27bf311f14844894dc9c",
+  "PDF_sha256": "6fc4c33ebfc9cf5b5c51f70eeec825efa57514f4fa2ad27faa1383f458ecf6e1",
+  "candidate_sha256": "a74e74c208325c883879d047b744b0dc7f04d2992e85d0c1c552e820da3dd296",
+  "source_chart_sha256": "9674c37c69c72fc9bacfc1b5693782aa0728dcab999146111898ed0f187bb0ef",
+  "renderer": "LibreOffice26.8.0.3 actual PPTX-to-PDF export; PyMuPDF1.26.5 PDF rasterisation",
+  "Microsoft_PowerPoint_render_not_claimed": true,
+  "slide_count": 6,
+  "editable_text_and_notes": true,
+  "separate_editable_drawio_chart": true,
+  "all_shapes_inside_slide": true,
+  "notes_count": 6,
+  "all_rendered_text_spans_inside_page": true,
+  "raster_inspection_pending": false,
+  "slides": [
+    {
+      "slide": 1,
+      "PDF_text": "One wet month does not prove a wetter climate\n•\nFictional Example Town: 100 mm in September\n•\nAssumed September baseline: 80 mm\n•\nOne month cannot establish a long-term change\nSources: S1  |  Full links and speaking notes in the notes pane\nPractical Work Delivery with Multiple AIs  •  Fictional learning example\n1\n",
+      "PNG": "slide-01.png",
+      "PNG_sha256": "710950286de0865b7224dd03dfed9f77040fe2a9d0722c78c619c85a5821a8a0",
+      "text_spans_within_page": true,
+      "fonts": [
+        "LiberationSans",
+        "LiberationSans-Bold"
+      ],
+      "host_raster_inspected": true
+    },
+    {
+      "slide": 2,
+      "PDF_text": "Compare September with September\n•\nUse the same calendar month across years\n•\nOur assumed baseline covers 1991–2020\n•\nKeep examples separate from observations\nSources: S1, S2  |  Full links and speaking notes in the notes pane\nPractical Work Delivery with Multiple AIs  •  Fictional learning example\n2\n",
+      "PNG": "slide-02.png",
+      "PNG_sha256": "56b3a9de7f2c635fa5081a8a293cc8947530e6638377e6df4538712e3368da6c",
+      "text_spans_within_page": true,
+      "fonts": [
+        "LiberationSans",
+        "LiberationSans-Bold"
+      ],
+      "host_raster_inspected": true
+    },
+    {
+      "slide": 3,
+      "PDF_text": "25 percent above the baseline\nSources: S2  |  Full links and speaking notes in the notes pane\nPractical Work Delivery with Multiple AIs  •  Fictional learning example\n3\n",
+      "PNG": "slide-03.png",
+      "PNG_sha256": "ec128e48ccce5e0ca7c22587c420f9ab5069cda71770262486a6e46ab910be87",
+      "text_spans_within_page": true,
+      "fonts": [
+        "LiberationSans",
+        "LiberationSans-Bold"
+      ],
+      "host_raster_inspected": true
+    },
+    {
+      "slide": 4,
+      "PDF_text": "Three different questions\n•\nAnomaly: how far from the usual amount?\n•\nTrend: how is rainfall changing over years?\n•\nAttribution: what influenced the event?\nSources: S1, S2, S3, S4  |  Full links and speaking notes in the notes pane\nPractical Work Delivery with Multiple AIs  •  Fictional learning example\n4\n",
+      "PNG": "slide-04.png",
+      "PNG_sha256": "11a935cf14531967ec35f2440b86e5c9949c6e1db6b16c4272f82cc434eb397c",
+      "text_spans_within_page": true,
+      "fonts": [
+        "LiberationSans",
+        "LiberationSans-Bold"
+      ],
+      "host_raster_inspected": true
+    },
+    {
+      "slide": 5,
+      "PDF_text": "What would we need to know?\n•\nLocal rainfall records covering many years\n•\nDetails of measurement changes and gaps\n•\nHow much rainfall varies, and how certain we are\nSources: S1, S2  |  Full links and speaking notes in the notes pane\nPractical Work Delivery with Multiple AIs  •  Fictional learning example\n5\n",
+      "PNG": "slide-05.png",
+      "PNG_sha256": "3a87caf48e5751e2807af8e0373fd457ee0ed0e30ea15d8bd0083144a2019ca7",
+      "text_spans_within_page": true,
+      "fonts": [
+        "LiberationSans",
+        "LiberationSans-Bold"
+      ],
+      "host_raster_inspected": true
+    },
+    {
+      "slide": 6,
+      "PDF_text": "A clear message to share\n•\nOur fictional September is 25 percent above baseline\n•\nOne wet month does not establish a wetter climate\n•\nLocal conclusions need long-term records and analysis\nSources: S1, S2  |  Full links and speaking notes in the notes pane\nPractical Work Delivery with Multiple AIs  •  Fictional learning example\n6\n",
+      "PNG": "slide-06.png",
+      "PNG_sha256": "79569a10a5050b4d0e20916d2b459238e26817b8344079ac1ee354a5f5b62c0c",
+      "text_spans_within_page": true,
+      "fonts": [
+        "LiberationSans",
+        "LiberationSans-Bold"
+      ],
+      "host_raster_inspected": true
+    }
+  ],
+  "host_observations": [
+    "All6PNG images inspected in view_image at1440x810",
+    "Titles and bullets readable, no clipped text or overlapping labels seen",
+    "Slide3chart clears source/footer region; correct25percentabove and fictional inputs",
+    "Title31pt,body25pt,sourcefooter12pt; branding10pt. Imagechart labels inspected separately",
+    "ActualnotesURLs verified fromPPTXXML; all6speakingnarratives retained",
+    "NoMicrosoftPowerPoint/browser/assistive-technology inspection claimed"
+  ],
+  "chart_clears_footer_geometry": true
+}

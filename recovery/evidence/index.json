@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "case": "cli_exit",
+      "file": "cli_exit.json",
+      "sha256": "8e75cccd65c0421100f3078e6e30e4af4312fef69e3f3303bab7ab9dab93a595"
+    },
+    {
+      "case": "service_outage",
+      "file": "service_outage.json",
+      "sha256": "8298bebf06109744eb169cf2fa2fc22f47a187c279cc9df9467e5f121a11f8d3"
+    },
+    {
+      "case": "lost_context",
+      "file": "lost_context.json",
+      "sha256": "c8c8111b1c201295aaffec9c750981317e8ba0320d0f3afd69f815d6e5d3d5c4"
+    },
+    {
+      "case": "expired_ownership",
+      "file": "expired_ownership.json",
+      "sha256": "18887f03e8d47f4e19c2d13d40bbe5d113ef087512df32e6098bbe6628f30adb"
+    },
+    {
+      "case": "file_before_record",
+      "file": "file_before_record.json",
+      "sha256": "03ce4bcaf1e337b044eb38425a0766756c70265d05cebeee4801fe77a7733190"
+    },
+    {
+      "case": "consumed_authority_budget",
+      "file": "consumed_authority_budget.json",
+      "sha256": "b01065a97474da2b78608a10264e414abc9f467d516488239e5e1004ebe5814b"
+    }
+  ],
+  "count": 6,
+  "actual_fixture_workers": 1,
+  "actual_adapter_wrapper_processes": 1,
+  "model_processes": 0,
+  "real_service_writes": 0,
+  "authority": "fictional decisions, not actual William approval"
+}

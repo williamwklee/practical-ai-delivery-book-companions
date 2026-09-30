@@ -1,0 +1,164 @@
+{
+  "scopes": [
+    {
+      "id": "@all",
+      "parent": null,
+      "policy": {
+        "actions": [
+          "draft",
+          "review"
+        ],
+        "corrections": 2,
+        "cycles": 3,
+        "deadline": 1790647289.85769,
+        "launches": 7,
+        "no_progress": 2,
+        "observed_tokens": null,
+        "retries": 0,
+        "reviews": 4
+      },
+      "used": {
+        "corrections": 1,
+        "cycles": 2,
+        "launches": 3,
+        "observed_tokens": 45417,
+        "progress_fingerprint": null,
+        "repeated_findings": 0,
+        "retries": 0,
+        "retry_pending": null,
+        "reviews": 2,
+        "unknown_usage_attempts": 0
+      },
+      "plan": "initial"
+    },
+    {
+      "id": "DEV-83",
+      "parent": "@all",
+      "policy": {
+        "actions": [
+          "draft",
+          "review"
+        ],
+        "corrections": 2,
+        "cycles": 3,
+        "deadline": 1790647289.85769,
+        "launches": 7,
+        "no_progress": 2,
+        "observed_tokens": null,
+        "retries": 0,
+        "reviews": 4
+      },
+      "used": {
+        "corrections": 1,
+        "cycles": 2,
+        "launches": 3,
+        "observed_tokens": 45417,
+        "progress_fingerprint": null,
+        "repeated_findings": 0,
+        "retries": 0,
+        "retry_pending": null,
+        "reviews": 2,
+        "unknown_usage_attempts": 0
+      },
+      "plan": "initial"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "f9612dfe779740b5abe79a9e34b166b5",
+      "unit": "DEV-83",
+      "role": "checker",
+      "purpose": "checker",
+      "action": "review",
+      "state": "settled",
+      "deadline": 1790647289.85769,
+      "binding": "8e70ffc533e443efe6a4fa7e9cc42bb0085abc3d4a156045655bd1c0057c61a9",
+      "result": "{\"binding\":\"8e70ffc533e443efe6a4fa7e9cc42bb0085abc3d4a156045655bd1c0057c61a9\",\"exit_code\":0,\"failure\":null,\"findings_fingerprint\":\"d18f667898d964e0305d57bb8593360806fc30a7c21eb48fe1043bc76eaffaf3\",\"native_adapter_success\":true,\"observed_tokens\":10476,\"optional_usage_does_not_gate_evidence\":true,\"partial\":[\"/Users/williamlee/Documents/Codex/2026-09-19/oci-vault-access-audit-a-claude/engineering-book/batch-four/DEV-83/demo/seed-review/run/run.json\",\"/Users/williamlee/Documents/Codex/2026-09-19/oci-vault-access-audit-a-claude/engineering-book/batch-four/DEV-83/demo/seed-review/run/final.txt\"],\"process_ended\":true,\"result_sha256\":\"1eca187ab5cdc641817be67a23396422167a5c239dc494d367e12c07aaedb879\",\"synthetic\":false,\"terminal_valid\":true}"
+    },
+    {
+      "id": "fae5897130ff41eea95a688e8b4b5371",
+      "unit": "DEV-83",
+      "role": "correction",
+      "purpose": "correction",
+      "action": "draft",
+      "state": "settled",
+      "deadline": 1790647289.85769,
+      "binding": "4d974e54e6d42cebadbb1965d810a60d6dbf0795c48b74542cebc63c9b156220",
+      "result": "{\"binding\":\"4d974e54e6d42cebadbb1965d810a60d6dbf0795c48b74542cebc63c9b156220\",\"exit_code\":0,\"failure\":null,\"native_adapter_success\":true,\"observed_tokens\":13971,\"optional_usage_does_not_gate_evidence\":true,\"partial\":[\"/Users/williamlee/Documents/Codex/2026-09-19/oci-vault-access-audit-a-claude/engineering-book/batch-four/DEV-83/demo/correction/run/run.json\",\"/Users/williamlee/Documents/Codex/2026-09-19/oci-vault-access-audit-a-claude/engineering-book/batch-four/DEV-83/demo/correction/run/final.txt\"],\"process_ended\":true,\"result_sha256\":\"2471154593f5b1f178881e899eb34d08c7742e558c7920b643480de1ae437310\",\"synthetic\":false,\"terminal_valid\":true}"
+    },
+    {
+      "id": "e3e72a8f751e42cd8118ebd90e87eff1",
+      "unit": "DEV-83",
+      "role": "checker",
+      "purpose": "checker",
+      "action": "review",
+      "state": "settled",
+      "deadline": 1790647289.85769,
+      "binding": "4a45903e605bd4aa5695b3510893e988e91e93ee4fceeb7a4185ca7f0b6a8f85",
+      "result": "{\"binding\":\"4a45903e605bd4aa5695b3510893e988e91e93ee4fceeb7a4185ca7f0b6a8f85\",\"exit_code\":0,\"failure\":null,\"findings_fingerprint\":null,\"native_adapter_success\":true,\"observed_tokens\":20970,\"optional_usage_does_not_gate_evidence\":true,\"partial\":[\"/Users/williamlee/Documents/Codex/2026-09-19/oci-vault-access-audit-a-claude/engineering-book/batch-four/DEV-83/demo/corrected-review/run/run.json\",\"/Users/williamlee/Documents/Codex/2026-09-19/oci-vault-access-audit-a-claude/engineering-book/batch-four/DEV-83/demo/corrected-review/run/final.txt\"],\"process_ended\":true,\"result_sha256\":\"0325c699f358124bae269b4a24a1b7e1984bd7fc1bd76784536d2b73309c9497\",\"synthetic\":false,\"terminal_valid\":true}"
+    }
+  ],
+  "stops": [],
+  "events": [
+    {
+      "seq": 1,
+      "kind": "bootstrap",
+      "record": "{\"at\":1790640339.960515,\"authority_ref\":\"William batch instruction; current host-claimed Task, native blockers Done. Example7 plus reserved delivery audits3 within original10.\",\"campaign\":\"DEV-83-example\",\"parents\":{\"DEV-83\":\"@all\"},\"policies\":{\"@all\":{\"actions\":[\"draft\",\"review\"],\"corrections\":2,\"cycles\":3,\"deadline\":1790647289.85769,\"launches\":7,\"no_progress\":2,\"observed_tokens\":null,\"retries\":0,\"reviews\":4},\"DEV-83\":{\"actions\":[\"draft\",\"review\"],\"corrections\":2,\"cycles\":3,\"deadline\":1790647289.85769,\"launches\":7,\"no_progress\":2,\"observed_tokens\":null,\"retries\":0,\"reviews\":4}}}"
+    },
+    {
+      "seq": 2,
+      "kind": "cycle_started",
+      "record": "{\"at\":1790640339.9658291,\"cumulative\":{\"@all\":{\"corrections\":0,\"cycles\":1,\"launches\":0,\"observed_tokens\":0,\"progress_fingerprint\":null,\"repeated_findings\":0,\"retries\":0,\"retry_pending\":null,\"reviews\":0,\"unknown_usage_attempts\":0},\"DEV-83\":{\"corrections\":0,\"cycles\":1,\"launches\":0,\"observed_tokens\":0,\"progress_fingerprint\":null,\"repeated_findings\":0,\"retries\":0,\"retry_pending\":null,\"reviews\":0,\"unknown_usage_attempts\":0}},\"unit\":\"DEV-83\"}"
+    },
+    {
+      "seq": 3,
+      "kind": "reserved",
+      "record": "{\"action\":\"review\",\"at\":1790640340.1143072,\"binding\":\"8e70ffc533e443efe6a4fa7e9cc42bb0085abc3d4a156045655bd1c0057c61a9\",\"cumulative\":{\"@all\":{\"corrections\":0,\"cycles\":1,\"launches\":1,\"observed_tokens\":0,\"progress_fingerprint\":null,\"repeated_findings\":0,\"retries\":0,\"retry_pending\":null,\"reviews\":1,\"unknown_usage_attempts\":0},\"DEV-83\":{\"corrections\":0,\"cycles\":1,\"launches\":1,\"observed_tokens\":0,\"progress_fingerprint\":null,\"repeated_findings\":0,\"retries\":0,\"retry_pending\":null,\"reviews\":1,\"unknown_usage_attempts\":0}},\"deadline\":1790647289.85769,\"id\":\"f9612dfe779740b5abe79a9e34b166b5\",\"purpose\":\"checker\",\"role\":\"checker\",\"unit\":\"DEV-83\"}"
+    },
+    {
+      "seq": 4,
+      "kind": "launch_boundary",
+      "record": "{\"at\":1790640340.1152399,\"id\":\"f9612dfe779740b5abe79a9e34b166b5\",\"process_started\":\"not yet known\",\"unit\":\"DEV-83\"}"
+    },
+    {
+      "seq": 5,
+      "kind": "settled",
+      "record": "{\"at\":1790640382.9184341,\"id\":\"f9612dfe779740b5abe79a9e34b166b5\",\"result\":{\"binding\":\"8e70ffc533e443efe6a4fa7e9cc42bb0085abc3d4a156045655bd1c0057c61a9\",\"exit_code\":0,\"failure\":null,\"findings_fingerprint\":\"d18f667898d964e0305d57bb8593360806fc30a7c21eb48fe1043bc76eaffaf3\",\"native_adapter_success\":true,\"observed_tokens\":10476,\"optional_usage_does_not_gate_evidence\":true,\"partial\":[\"/Users/williamlee/Documents/Codex/2026-09-19/oci-vault-access-audit-a-claude/engineering-book/batch-four/DEV-83/demo/seed-review/run/run.json\",\"/Users/williamlee/Documents/Codex/2026-09-19/oci-vault-access-audit-a-claude/engineering-book/batch-four/DEV-83/demo/seed-review/run/final.txt\"],\"process_ended\":true,\"result_sha256\":\"1eca187ab5cdc641817be67a23396422167a5c239dc494d367e12c07aaedb879\",\"synthetic\":false,\"terminal_valid\":true},\"unit\":\"DEV-83\"}"
+    },
+    {
+      "seq": 6,
+      "kind": "cycle_started",
+      "record": "{\"at\":1790640428.1242461,\"cumulative\":{\"@all\":{\"corrections\":0,\"cycles\":2,\"launches\":1,\"observed_tokens\":10476,\"progress_fingerprint\":null,\"repeated_findings\":0,\"retries\":0,\"retry_pending\":null,\"reviews\":1,\"unknown_usage_attempts\":0},\"DEV-83\":{\"corrections\":0,\"cycles\":2,\"launches\":1,\"observed_tokens\":10476,\"progress_fingerprint\":\"d18f667898d964e0305d57bb8593360806fc30a7c21eb48fe1043bc76eaffaf3\",\"repeated_findings\":1,\"retries\":0,\"retry_pending\":null,\"reviews\":1,\"unknown_usage_attempts\":0}},\"unit\":\"DEV-83\"}"
+    },
+    {
+      "seq": 7,
+      "kind": "reserved",
+      "record": "{\"action\":\"draft\",\"at\":1790640428.1502929,\"binding\":\"4d974e54e6d42cebadbb1965d810a60d6dbf0795c48b74542cebc63c9b156220\",\"cumulative\":{\"@all\":{\"corrections\":1,\"cycles\":2,\"launches\":2,\"observed_tokens\":10476,\"progress_fingerprint\":null,\"repeated_findings\":0,\"retries\":0,\"retry_pending\":null,\"reviews\":1,\"unknown_usage_attempts\":0},\"DEV-83\":{\"corrections\":1,\"cycles\":2,\"launches\":2,\"observed_tokens\":10476,\"progress_fingerprint\":\"d18f667898d964e0305d57bb8593360806fc30a7c21eb48fe1043bc76eaffaf3\",\"repeated_findings\":1,\"retries\":0,\"retry_pending\":null,\"reviews\":1,\"unknown_usage_attempts\":0}},\"deadline\":1790647289.85769,\"id\":\"fae5897130ff41eea95a688e8b4b5371\",\"purpose\":\"correction\",\"role\":\"correction\",\"unit\":\"DEV-83\"}"
+    },
+    {
+      "seq": 8,
+      "kind": "launch_boundary",
+      "record": "{\"at\":1790640428.151218,\"id\":\"fae5897130ff41eea95a688e8b4b5371\",\"process_started\":\"not yet known\",\"unit\":\"DEV-83\"}"
+    },
+    {
+      "seq": 9,
+      "kind": "settled",
+      "record": "{\"at\":1790640495.3410828,\"id\":\"fae5897130ff41eea95a688e8b4b5371\",\"result\":{\"binding\":\"4d974e54e6d42cebadbb1965d810a60d6dbf0795c48b74542cebc63c9b156220\",\"exit_code\":0,\"failure\":null,\"native_adapter_success\":true,\"observed_tokens\":13971,\"optional_usage_does_not_gate_evidence\":true,\"partial\":[\"/Users/williamlee/Documents/Codex/2026-09-19/oci-vault-access-audit-a-claude/engineering-book/batch-four/DEV-83/demo/correction/run/run.json\",\"/Users/williamlee/Documents/Codex/2026-09-19/oci-vault-access-audit-a-claude/engineering-book/batch-four/DEV-83/demo/correction/run/final.txt\"],\"process_ended\":true,\"result_sha256\":\"2471154593f5b1f178881e899eb34d08c7742e558c7920b643480de1ae437310\",\"synthetic\":false,\"terminal_valid\":true},\"unit\":\"DEV-83\"}"
+    },
+    {
+      "seq": 10,
+      "kind": "reserved",
+      "record": "{\"action\":\"review\",\"at\":1790640559.189107,\"binding\":\"4a45903e605bd4aa5695b3510893e988e91e93ee4fceeb7a4185ca7f0b6a8f85\",\"cumulative\":{\"@all\":{\"corrections\":1,\"cycles\":2,\"launches\":3,\"observed_tokens\":24447,\"progress_fingerprint\":null,\"repeated_findings\":0,\"retries\":0,\"retry_pending\":null,\"reviews\":2,\"unknown_usage_attempts\":0},\"DEV-83\":{\"corrections\":1,\"cycles\":2,\"launches\":3,\"observed_tokens\":24447,\"progress_fingerprint\":\"d18f667898d964e0305d57bb8593360806fc30a7c21eb48fe1043bc76eaffaf3\",\"repeated_findings\":1,\"retries\":0,\"retry_pending\":null,\"reviews\":2,\"unknown_usage_attempts\":0}},\"deadline\":1790647289.85769,\"id\":\"e3e72a8f751e42cd8118ebd90e87eff1\",\"purpose\":\"checker\",\"role\":\"checker\",\"unit\":\"DEV-83\"}"
+    },
+    {
+      "seq": 11,
+      "kind": "launch_boundary",
+      "record": "{\"at\":1790640559.1901078,\"id\":\"e3e72a8f751e42cd8118ebd90e87eff1\",\"process_started\":\"not yet known\",\"unit\":\"DEV-83\"}"
+    },
+    {
+      "seq": 12,
+      "kind": "settled",
+      "record": "{\"at\":1790640629.122887,\"id\":\"e3e72a8f751e42cd8118ebd90e87eff1\",\"result\":{\"binding\":\"4a45903e605bd4aa5695b3510893e988e91e93ee4fceeb7a4185ca7f0b6a8f85\",\"exit_code\":0,\"failure\":null,\"findings_fingerprint\":null,\"native_adapter_success\":true,\"observed_tokens\":20970,\"optional_usage_does_not_gate_evidence\":true,\"partial\":[\"/Users/williamlee/Documents/Codex/2026-09-19/oci-vault-access-audit-a-claude/engineering-book/batch-four/DEV-83/demo/corrected-review/run/run.json\",\"/Users/williamlee/Documents/Codex/2026-09-19/oci-vault-access-audit-a-claude/engineering-book/batch-four/DEV-83/demo/corrected-review/run/final.txt\"],\"process_ended\":true,\"result_sha256\":\"0325c699f358124bae269b4a24a1b7e1984bd7fc1bd76784536d2b73309c9497\",\"synthetic\":false,\"terminal_valid\":true},\"unit\":\"DEV-83\"}"
+    }
+  ]
+}

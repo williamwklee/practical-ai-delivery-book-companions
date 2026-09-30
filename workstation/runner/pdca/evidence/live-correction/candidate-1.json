@@ -1,0 +1,27 @@
+{
+  "choice": "Oak",
+  "comparison": [
+    {
+      "source": "S1",
+      "seats": 24,
+      "step_free": true,
+      "price_gbp": 120,
+      "meets_request": true
+    },
+    {
+      "source": "S2",
+      "seats": 30,
+      "step_free": false,
+      "price_gbp": 90,
+      "meets_request": false
+    },
+    {
+      "source": "S3",
+      "seats": 16,
+      "step_free": true,
+      "price_gbp": 85,
+      "meets_request": false
+    }
+  ],
+  "summary": "Recommend Oak, the only qualifying room: its 24 seats accommodate 20 people, it has step-free access, and its GBP120 price is within the GBP150 limit. Birch fails because it lacks step-free access. Elm fails because its 16 seats are four short. This recommendation uses only the fictional source cards and establishes no real-world venue facts or availability."
+}

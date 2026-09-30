@@ -1,0 +1,40 @@
+{
+  "synthetic_fixture": true,
+  "observed_at": "2026-09-27T13:00:00Z",
+  "issue_type": "Task",
+  "hierarchy_level": 0,
+  "status": "Work Approved",
+  "authority": {
+    "verified": true,
+    "record": "fixture://simulated-human-approval",
+    "human": "William (synthetic fixture, not real approval)"
+  },
+  "ownership_checked": true,
+  "owner": null,
+  "blockers_complete": true,
+  "blockers": [
+    {
+      "key": "SAMPLE-INPUT-01",
+      "status": "In Progress"
+    }
+  ],
+  "inputs_verified": {
+    "rooms": true
+  },
+  "usage": {
+    "primary_launches": 0,
+    "active_seconds": 0,
+    "reviews": 0,
+    "corrections": 0,
+    "transient_retries": 0,
+    "stalled_cycles": 0,
+    "reserved_launches": 0,
+    "reserved_seconds": 0
+  },
+  "next_launch_seconds": 180,
+  "ledger_id": "fixture://SAMPLE-RESEARCH-01/lifetime",
+  "manual_stop": false,
+  "resume_required": false,
+  "next_action": "produce",
+  "unresolved_execution_failure": false
+}

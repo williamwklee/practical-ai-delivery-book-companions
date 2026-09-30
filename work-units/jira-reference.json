@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "project": "DEV",
+  "measured_date": "2026-09-27",
+  "source_issue": "DEV-76",
+  "source_status": "In Progress",
+  "protocol_url": "https://williamwklee.atlassian.net/wiki/spaces/DEV/pages/65274134",
+  "claimable_statuses": [
+    "Work Approved",
+    "Rework Required"
+  ],
+  "terminal_dependency_statuses": [
+    "Done",
+    "Rejected",
+    "Duplicate"
+  ],
+  "status_mapping": {
+    "Rejected": {
+      "status_id": "10420",
+      "category": "done",
+      "transition_id": "3"
+    },
+    "Blocked": {
+      "status_id": "10488",
+      "category": "indeterminate",
+      "transition_id": "7"
+    },
+    "To Do": {
+      "status_id": "10340",
+      "category": "new",
+      "transition_id": "11"
+    },
+    "Work Approved": {
+      "status_id": "10455",
+      "category": "new",
+      "transition_id": "6"
+    },
+    "Duplicate": {
+      "status_id": "10421",
+      "category": "done",
+      "transition_id": "4"
+    },
+    "Done": {
+      "status_id": "10343",
+      "category": "done",
+      "transition_id": "41"
+    },
+    "In Progress": {
+      "status_id": "10341",
+      "category": "indeterminate",
+      "transition_id": "21"
+    },
+    "In Review": {
+      "status_id": "10342",
+      "category": "indeterminate",
+      "transition_id": "31"
+    },
+    "Awaiting Acceptance": {
+      "status_id": "10419",
+      "category": "indeterminate",
+      "transition_id": "2"
+    },
+    "Rework Required": {
+      "status_id": "10422",
+      "category": "indeterminate",
+      "transition_id": "5"
+    }
+  },
+  "server_authorization_enforcement": false,
+  "atomic_claim": false,
+  "scheduled_dispatcher_armed": false,
+  "note": "Ten advertised transitions observed from DEV76 In Progress; convention and current status govern authority, not advertised transition availability. Local dry-run samples do not mutate Jira."
+}

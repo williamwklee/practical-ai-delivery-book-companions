@@ -1,0 +1,26 @@
+{
+  "unit": "DEV-85",
+  "audience": "A reader who wants a small dependable calculation; programming is one optional deliverable, not the assumed reader profession",
+  "purpose": "A local command comparing an amount with a baseline, demonstrated with fictional100mmversus80mm",
+  "runtime": "Python3.9or later; standard library only; no network, credentials or modelAPI",
+  "input_contract": [
+    "Exactly two command-line arguments: amount and baseline, in the same units",
+    "Plain ASCII decimal notation only: digits with optional decimal point and optional leading plus; no exponent, NaN, infinity or minus sign",
+    "Each argument1–32characters; no surrounding whitespace; amount0through100000inclusive; baselinegreaterthan0through100000inclusive"
+  ],
+  "output_contract": [
+    "On valid input print one JSON object tostdout and exit0; no stderr",
+    "Keys amount,baseline,difference,percent_above,percent_of,notice; numeric fields are decimal strings with exactly2fractional digits, rounded ROUND_HALF_UP",
+    "difference=amount−baseline; percent_above=(amount−baseline)/baseline*100; percent_of=amount/baseline*100",
+    "notice must say: Comparison only; no trend, cause or forecast is established.",
+    "On invalid input/argumentcount, exit2, print one helpful line starting STOP: tostderr, stdout empty, no traceback",
+    "Reject invalid input before calculating or emitting a result; no loop, network/file writes or extra dependencies"
+  ],
+  "acceptance": [
+    "10080yields20.00difference,25.00percent_above,125.00percent_of",
+    "Equalamountbaselineyields0.00percent_above; loweramount yieldsnegativechange; zeroamount valid with−100.00percent_above",
+    "Reject missing/extraarguments,emptyinput,negative,zero baseline,NaN,Infinity,letters,exponents,whitespace,overlong andoverrangeinputs",
+    "Keep rawseed, independentfindings, correction, outputchecks and rejected-input/recovery evidence; work-history metadata is separate from user-facing calculator output"
+  ],
+  "schema": "Return JSON files mapping compare_amounts.py to complete source string, plus dispositions list. Host supplies independent fixed-expectation tests."
+}

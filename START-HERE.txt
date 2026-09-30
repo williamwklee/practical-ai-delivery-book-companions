@@ -1,0 +1,16 @@
+# Companion files for Practical Work Delivery with Multiple AIs
+
+These exercise files are shared by the English book and its translations. The same version can be used with every language edition. The ebook itself is published on Leanpub; this repository supplies the separate files needed for its file-based exercises.
+
+Download the ZIP from the GitHub release at https://github.com/williamwklee/practical-ai-delivery-book-companions/releases/tag/v1.0.0 and extract it to a new folder. A GitHub account and access to the publisher's private Jira or Confluence records are not required. Keep the folder structure. Read the chapter's instructions and the README in the exercise folder before running code.
+
+Start with a small exercise:
+- Chapter 3: workstation/START-HERE.txt and workstation/runner/pdca/README.md
+- Chapter 6: records/README.txt
+- Chapter 7: exact-version/README.txt
+- Chapter 10: pickup/README.md
+- Chapter 17: research/README.md
+- Chapter 18: presentation/README.md
+- Chapter 19: software/README.md
+
+The root COMPANION-MANIFEST.json lists each file's size and SHA-256 hash. Some examples invoke consumer AI CLIs or shared services; do not run them without reading the relevant setup, authority and finite-allowance instructions in the book. The local research and calculator checks do not call an AI.

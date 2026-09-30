@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" version="31.4.5">
+  <diagram id="dev79-pickup" name="One owner and one publication slot">
+    <mxGraphModel dx="1400" dy="600" grid="1" gridSize="10" page="1" pageWidth="1450" pageHeight="650">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="ONE APPROVED UNIT · ONE OWNER · ONE PUBLICATION SLOT" style="text;html=1;fontSize=25;fontStyle=1;fontColor=#14213D;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="30" y="25" width="1320" height="60" />
+        </mxCell>
+        <mxCell id="w1" value="Worker A" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#6366F1;fontSize=21;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="30" y="165" width="190" height="85" />
+        </mxCell>
+        <mxCell id="w2" value="Worker B" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E7FF;strokeColor=#6366F1;fontSize=21;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="30" y="325" width="190" height="85" />
+        </mxCell>
+        <mxCell id="queue" value="Fixed approved queue&lt;br&gt;Fresh Jira read&lt;br&gt;Dependencies checked" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1FAE5;strokeColor=#059669;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="305" y="235" width="230" height="120" />
+        </mxCell>
+        <mxCell id="claim" value="Atomic local claim&lt;br&gt;Approval consumed&lt;br&gt;One current owner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF3C7;strokeColor=#D97706;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="615" y="235" width="240" height="120" />
+        </mxCell>
+        <mxCell id="result" value="Checked runner result&lt;br&gt;Exact request + result&lt;br&gt;One publication slot" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DBEAFE;strokeColor=#2563EB;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="935" y="235" width="240" height="120" />
+        </mxCell>
+        <mxCell id="publish" value="Trusted publisher&lt;br&gt;Write once, then verify&lt;br&gt;Uncertain write → stop" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE7F3;strokeColor=#DB2777;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1235" y="235" width="240" height="120" />
+        </mxCell>
+        <mxCell id="note" value="Workers share one coordinator. Jira read + transition is not an atomic lock.&lt;br&gt;Local demonstration uses a file sink. Connected delivery needs its own evidence. A person accepts completion." style="text;whiteSpace=wrap;html=1;fontSize=19;fontColor=#475569;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="280" y="465" width="1190" height="90" />
+        </mxCell>
+        <mxCell id="edge0" edge="1" parent="1" source="w1" target="queue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;strokeColor=#475569;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="1" source="w2" target="queue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;strokeColor=#475569;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="1" source="queue" target="claim" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;strokeColor=#475569;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge3" edge="1" parent="1" source="claim" target="result" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;strokeColor=#475569;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge4" edge="1" parent="1" source="result" target="publish" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeWidth=2;strokeColor=#475569;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

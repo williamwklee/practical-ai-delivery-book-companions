@@ -1,0 +1,93 @@
+{
+  "report_markdown": "# Does one wet month mean a wetter climate?\n\n**No. One unusually wet month cannot by itself establish that a local climate is getting wetter.** The Met Office describes climate over periods usually spanning 30 years ([S1](https://weather.metoffice.gov.uk/climate/climate-explained/what-is-climate)). Our inference from this timescale distinction is that a single month's departure from a baseline does not demonstrate a long-term change; this is explanatory reasoning, not a local study result.\n\n## A fictional example\n\nExample Town and its September rainfall of **100 mm** are fictional inputs. Its same-month 1991–2020 baseline of **80 mm** is assumed for this exercise, not calculated from local observations.\n\n- Difference: 100 − 80 = **20 mm above baseline**.\n- Percentage above baseline: (100 − 80) ÷ 80 × 100 = **25% above baseline**.\n- Percentage of baseline: 100 ÷ 80 × 100 = **125% of baseline**.\n\nA monthly normal averages the same calendar month across years—for example, September across 1991–2020—not 30 consecutive months. NOAA describes official U.S. normals using a uniform 30-year period. We use that source only to explain the method, not to supply local or UK rainfall data ([S2](https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals)).\n\n## Three different questions\n\nAn **anomaly** describes a departure from a baseline: here, September is 20 mm wetter than the assumed September normal. A **trend** describes change over time. Comparing one month with a long-term average does not show how rainfall has changed through the years; that distinction follows from the climate and normals explanations ([S1](https://weather.metoffice.gov.uk/climate/climate-explained/what-is-climate), [S2](https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals)).\n\n**Attribution** investigates causes and requires multiple lines of evidence ([S3](https://psl.noaa.gov/csi/why/)). Individual events can be investigated for a climate-change influence: event-attribution studies compare simulations with and without human influence, alongside observations and other inputs ([S4](https://www.metoffice.gov.uk/research/climate/understanding-climate/attributing-extreme-weather-to-climate-change)). No such study was performed for this fictional month.\n\n## What further evidence is needed?\n\nTo investigate a local trend, we would need a long local rainfall time series covering many years, with comparable calendar months, seasons and annual totals as appropriate to the question. We would also need records of station location, instruments, measurement methods and missing observations to assess comparability, plus uncertainty in observations, the baseline and any estimated trend. These are proposed evidence requirements, not analyses completed here.\n\nThe supplied totals alone establish neither how rare this month would be nor whether it qualifies as extreme. Those questions need the distribution and variability of local rainfall. This brief provides no forecast, measured local trend or attribution result.\n\n**Suggested newsletter wording:** “In our fictional example, September rainfall was 100 mm—20 mm, or 25%, above the assumed September baseline. One wet month does not establish a wetter climate; a reliable long-term local record and analysis are needed.”",
+  "dispositions": [
+    {
+      "id": "caught_seed",
+      "disposition": "Corrected the candidate's central errors: confusing 125% of baseline with 125% above baseline, and treating a single monthly anomaly as proof of a local climate trend. The fictional inputs establish the arithmetic; the timescale reasoning draws on S1 and S2.",
+      "sources": [
+        "https://weather.metoffice.gov.uk/climate/climate-explained/what-is-climate",
+        "https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals"
+      ]
+    },
+    {
+      "id": "F1",
+      "disposition": "Accepted. (100 − 80) / 80 × 100 = 25% above baseline; 100 / 80 × 100 = 125% of baseline. A value 125% above 80 mm would be exactly 180 mm.",
+      "evidence": "Supplied fictional inputs; direct arithmetic."
+    },
+    {
+      "id": "F2",
+      "disposition": "Accepted. Explicitly included 100 mm, the assumed 80 mm baseline, and all three required results: 20 mm above, 25% above and 125% of baseline.",
+      "evidence": "Original acceptance criteria and supplied fictional inputs."
+    },
+    {
+      "id": "F3",
+      "disposition": "Accepted. Replaced the unsupported trend claim with a plain answer that one monthly anomaly cannot establish a long-term local rainfall trend.",
+      "sources": [
+        "https://weather.metoffice.gov.uk/climate/climate-explained/what-is-climate",
+        "https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals"
+      ]
+    },
+    {
+      "id": "F4",
+      "disposition": "Accepted. Retained the usual 30-year climate timescale and explicitly identified the anomaly-to-trend reasoning as this brief's inference, not a quoted study finding.",
+      "sources": [
+        "https://weather.metoffice.gov.uk/climate/climate-explained/what-is-climate"
+      ]
+    },
+    {
+      "id": "F5",
+      "disposition": "Accepted. Replaced the asserted local trend headline with a neutral question.",
+      "evidence": "Original scope: explanatory brief, not a local trend study."
+    },
+    {
+      "id": "F6",
+      "disposition": "Accepted. Distinguished anomaly, trend and attribution. Included the qualifying evidence that individual events can be investigated through attribution studies using multiple evidence sources and simulations with and without human influence. Stated that no such study was performed here.",
+      "sources": [
+        "https://psl.noaa.gov/csi/why/",
+        "https://www.metoffice.gov.uk/research/climate/understanding-climate/attributing-extreme-weather-to-climate-change"
+      ]
+    },
+    {
+      "id": "F7",
+      "disposition": "Accepted. Added source IDs and exact links beside the supported claims, using all four supplied sources.",
+      "sources": [
+        "https://weather.metoffice.gov.uk/climate/climate-explained/what-is-climate",
+        "https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals",
+        "https://psl.noaa.gov/csi/why/",
+        "https://www.metoffice.gov.uk/research/climate/understanding-climate/attributing-extreme-weather-to-climate-change"
+      ]
+    },
+    {
+      "id": "F8",
+      "disposition": "Accepted. Removed the dismissal of longer records. Identified missing local time series, measurement comparability and uncertainty as proposed evidence requirements. Made no probability or extreme-event classification.",
+      "evidence": "Original acceptance criteria; supplied sources provide no local observations or local trend estimate."
+    },
+    {
+      "id": "F9",
+      "disposition": "Accepted. Explicitly labelled the town and rainfall inputs fictional, the baseline assumed rather than calculated, and S2 a source for the normals method only.",
+      "evidence": "Supplied fictional-input flag and S2 limitations.",
+      "sources": [
+        "https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals"
+      ]
+    },
+    {
+      "id": "F10",
+      "disposition": "Accepted. Populated dispositions with the caught errors, all ten findings, supporting evidence and links where applicable, and bounded audit records. Unprovided historical records remain unknown.",
+      "evidence": "Original acceptance criteria and the candidate's empty dispositions list."
+    },
+    {
+      "id": "independent_review_record",
+      "candidate_sha256": "aedfec35f3cb6e58f48a14258784343688ffe1c8968e81768acd1b32d86b20e3",
+      "supplied_verdict": "CORRECT",
+      "disposition": "Preserved the supplied verdict label. If intended to certify the candidate as correct, it conflicts with the supplied evidence and all ten accepted findings; the candidate required correction."
+    },
+    {
+      "id": "stopped_source_record",
+      "disposition": "No historical stopped-source record was supplied. No sources were browsed or retrievals attempted during this correction; historical source stops cannot be reconstructed."
+    },
+    {
+      "id": "consumed_resources",
+      "disposition": "Used only the supplied original request, four source excerpts and their notes and limits, fictional inputs, candidate and independent findings. This correction used zero tools, browsing calls or delegated agents. Historical resource consumption and quantitative token, time or cost records were not supplied."
+    }
+  ]
+}

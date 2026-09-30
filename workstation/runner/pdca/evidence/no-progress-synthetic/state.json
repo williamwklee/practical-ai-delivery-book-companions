@@ -1,0 +1,8 @@
+{
+  "disposition": "STOP",
+  "reason": "no_progress_unchanged_candidate",
+  "calls_reserved": 2,
+  "candidate_sha256": "5fbebd9bee87c8067fdff81a1af01d0415372812e7843a7e5305b640a8b61fce",
+  "deadline": 1790533112.777489,
+  "human_acceptance": "not granted by this runner"
+}

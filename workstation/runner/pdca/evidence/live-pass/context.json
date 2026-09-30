@@ -1,0 +1,40 @@
+{
+  "spec": {
+    "unit": "DEV-78-fictional-room-exercise",
+    "original_request": "Compare all three fictional rooms and recommend one for 20 people, requiring step-free access and a maximum price of GBP150. Explain the choice and why the alternatives fail. Use only these fictional source cards. No booking, payment or real-world venue claim.",
+    "constraints": {
+      "minimum_seats": 20,
+      "maximum_price_gbp": 150,
+      "step_free_required": true
+    },
+    "sources": {
+      "S1": {
+        "name": "Oak",
+        "seats": 24,
+        "step_free": true,
+        "price_gbp": 120
+      },
+      "S2": {
+        "name": "Birch",
+        "seats": 30,
+        "step_free": false,
+        "price_gbp": 90
+      },
+      "S3": {
+        "name": "Elm",
+        "seats": 16,
+        "step_free": true,
+        "price_gbp": 85
+      }
+    }
+  },
+  "request_sha256": "4512258e70c1aadda67776fa17bdd42e9e50e5690d8ce9060f64f6f6d811612f",
+  "limits": {
+    "calls": 4,
+    "corrections": 1,
+    "wall_seconds": 1200,
+    "deadline": 1790533112.861026,
+    "automatic_retries": 0
+  },
+  "scope": "fictional room comparison; CLI PDCA only; host publishes and human accepts"
+}

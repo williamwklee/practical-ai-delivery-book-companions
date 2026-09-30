@@ -1,0 +1,40 @@
+[
+  {
+    "phase": "Plan",
+    "message": "Admitted local attempt; external authority and shared ledger are operator prerequisites.",
+    "at": 1790531912.861302
+  },
+  {
+    "phase": "Do",
+    "message": "produce",
+    "at": 1790531912.86174,
+    "provider": "codex",
+    "candidate_sha256": "4512258e70c1aadda67776fa17bdd42e9e50e5690d8ce9060f64f6f6d811612f",
+    "call": 1
+  },
+  {
+    "phase": "Check",
+    "message": "check",
+    "at": 1790531922.783635,
+    "provider": "claude",
+    "candidate_sha256": "c14142a75845375970550dbace753fdb20a396c1a31324c2eac067dc5f4a4ab2",
+    "call": 2
+  },
+  {
+    "phase": "Check",
+    "message": "Checker and exact-data checks preserved.",
+    "at": 1790531930.2795122,
+    "review": {
+      "candidate_sha256": "c14142a75845375970550dbace753fdb20a396c1a31324c2eac067dc5f4a4ab2",
+      "verdict": "PASS",
+      "findings": []
+    },
+    "deterministic_findings": []
+  },
+  {
+    "phase": "Act",
+    "message": "independent_pass_and_fixture_checks_pass",
+    "at": 1790531930.280291,
+    "disposition": "READY_FOR_PUBLICATION"
+  }
+]
